@@ -1,9 +1,9 @@
 PODS:
-  - Realm (10.45.3):
-    - Realm/Headers (= 10.45.3)
-  - Realm/Headers (10.45.3)
-  - RealmSwift (10.45.3):
-    - Realm (= 10.45.3)
+  - Realm (10.49.1):
+    - Realm/Headers (= 10.49.1)
+  - Realm/Headers (10.49.1)
+  - RealmSwift (10.49.1):
+    - Realm (= 10.49.1)
   - RxBlocking (6.6.0):
     - RxSwift (= 6.6.0)
   - RxCocoa (6.6.0):
@@ -33,8 +33,8 @@ SPEC REPOS:
     - RxTest
 
 SPEC CHECKSUMS:
-  Realm: b277b843c7505c1e30e3a70322a24a09283e62bb
-  RealmSwift: f6690053e81733801e6619eb5b39993ab76f7050
+  Realm: 1fab4a224fd7a294eca142a0efe8b54546290fbf
+  RealmSwift: 7c3a9c001161eb01b96b171ad965a9c498b962b0
   RxBlocking: fbd1f8501443024f686e556f36dac79b0d5f4d7c
   RxCocoa: 44a80de90e25b739b5aeaae3c8c371a32e3343cc
   RxRelay: 45eaa5db8ee4fb50e5ebd57deec0159e97fa51e6

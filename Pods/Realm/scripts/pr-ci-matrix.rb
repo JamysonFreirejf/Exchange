@@ -61,9 +61,9 @@ Target = Struct.new(:name, :scheme, :filter, :destination) do
 
     test_destination = self.destination.test_destination
     if test_destination
-      action['actionType'] = 'TEST'
-      action['destination'] = 'ANY_MAC'
-      action['testConfiguration'] = {
+      action[:actionType] = 'TEST'
+      action[:destination] = 'ANY_MAC'
+      action[:testConfiguration] = {
         kind: 'USE_SCHEME_SETTINGS',
         testPlanName: '',
         testDestinations: [test_destination]
@@ -86,7 +86,7 @@ end
 # because they don't care about Xcode versions, while some others are latest-only
 # because they're particularly slow to run.
 module Workflows
-  XCODE_VERSIONS = %w(14.1 14.2 14.3.1 15.0.1 15.1)
+  XCODE_VERSIONS = %w(14.2 14.3.1 15.1 15.2 15.3)
 
   all = ->(v) { true }
   latest_only = ->(v) { v == XCODE_VERSIONS.last }
@@ -112,7 +112,7 @@ module Workflows
     Target.new('catalyst-swift', 'RealmSwift', oldest_and_latest, Destination.catalyst),
 
     Target.new('watchos', 'Realm', oldest_and_latest, Destination.generic),
-    Target.new('watchos', 'RealmSwift', oldest_and_latest, Destination.generic),
+    Target.new('watchos-swift', 'RealmSwift', oldest_and_latest, Destination.generic),
 
     Target.new('swiftui', 'SwiftUITests', latest_only, Destination.iOS),
     Target.new('swiftui-sync', 'SwiftUISyncTests', latest_only, Destination.macOS),
