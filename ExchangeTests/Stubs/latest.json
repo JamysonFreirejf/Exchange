@@ -1,0 +1,12 @@
+{
+    "disclaimer": "Usage subject to terms: https://openexchangerates.org/terms",
+    "license": "https://openexchangerates.org/license",
+    "timestamp": 1705428000,
+    "base": "USD",
+    "rates": {
+        "BRL": 4.9263,
+        "EUR": 0.920548,
+        "JPY": 147.25415789,
+        "USD": 1
+    }
+}
